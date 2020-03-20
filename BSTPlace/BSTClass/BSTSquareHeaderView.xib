@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BSTSquareHeaderView" customModule="BSTPlace" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="286"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bst_q1" translatesAutoresizingMaskIntoConstraints="NO" id="K4h-dU-6u4">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="O0f-5B-YMd"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bst_q2" translatesAutoresizingMaskIntoConstraints="NO" id="dNw-Tp-C1W">
+                    <rect key="frame" x="20" y="165" width="160" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="QYS-42-1wF"/>
+                        <constraint firstAttribute="width" constant="160" id="h3y-tA-TAz"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bst_q3" translatesAutoresizingMaskIntoConstraints="NO" id="xPD-JJ-Pjc">
+                    <rect key="frame" x="195" y="165" width="160" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="160" id="1Ut-0o-jOb"/>
+                        <constraint firstAttribute="height" constant="60" id="FnJ-nX-Zil"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Imh-11-vcy">
+                    <rect key="frame" x="20" y="240" width="5" height="35"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="5" id="Cxc-en-537"/>
+                        <constraint firstAttribute="height" constant="35" id="VFn-ov-xJF"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <real key="value" value="2.5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="今日推荐" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aA6-vH-mPY">
+                    <rect key="frame" x="35" y="249" width="58" height="17"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                    <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Imh-11-vcy" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="0qF-tY-6AO"/>
+                <constraint firstItem="K4h-dU-6u4" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="1jb-b2-WAh"/>
+                <constraint firstItem="dNw-Tp-C1W" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="4pY-dR-xpe"/>
+                <constraint firstItem="aA6-vH-mPY" firstAttribute="centerY" secondItem="Imh-11-vcy" secondAttribute="centerY" id="9vG-RJ-2gb"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="xPD-JJ-Pjc" secondAttribute="trailing" constant="20" id="K0Y-jb-Dhb"/>
+                <constraint firstItem="K4h-dU-6u4" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="NZw-T2-s3i"/>
+                <constraint firstItem="K4h-dU-6u4" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="U0E-FF-7Lo"/>
+                <constraint firstItem="Imh-11-vcy" firstAttribute="top" secondItem="dNw-Tp-C1W" secondAttribute="bottom" constant="15" id="aBw-Mm-2DB"/>
+                <constraint firstItem="dNw-Tp-C1W" firstAttribute="top" secondItem="K4h-dU-6u4" secondAttribute="bottom" constant="15" id="edp-qp-hoK"/>
+                <constraint firstItem="aA6-vH-mPY" firstAttribute="leading" secondItem="Imh-11-vcy" secondAttribute="trailing" constant="10" id="f72-S0-dcG"/>
+                <constraint firstItem="xPD-JJ-Pjc" firstAttribute="top" secondItem="K4h-dU-6u4" secondAttribute="bottom" constant="15" id="u1t-5d-Cmr"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="leftV" destination="dNw-Tp-C1W" id="Zcv-Y0-pV6"/>
+                <outlet property="rightV" destination="xPD-JJ-Pjc" id="fOe-uN-iH2"/>
+            </connections>
+            <point key="canvasLocation" x="103.62318840579711" y="-70.3125"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bst_q1" width="954" height="388"/>
+        <image name="bst_q2" width="406" height="180"/>
+        <image name="bst_q3" width="408" height="184"/>
+    </resources>
+</document>
