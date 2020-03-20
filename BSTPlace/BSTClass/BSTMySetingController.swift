@@ -8,6 +8,13 @@
 
 import UIKit
 
+let infoDic = Bundle.main.infoDictionary!
+// 获取 App 的版本号
+let bst_appVersion = infoDic["CFBundleShortVersionString"]
+// 获取 App 的 build 版本
+let bst_appBuildVersion = infoDic["CFBundleVersion"]
+// 获取 App 的名称
+let bst_appName = infoDic["CFBundleDisplayName"]
 
 class BSTMySetingController: BSTBaseController,UITableViewDelegate , UITableViewDataSource {
     private let reusedID = "SettingCellID"
@@ -71,7 +78,7 @@ class BSTMySetingController: BSTBaseController,UITableViewDelegate , UITableView
         case 2:
             self.navigationController?.pushViewController(BSTPriveController(), animated: true)
         case 3:
-            YBProgressHUD.showTipMessage(inWindow: "当前版本号v1.0")
+            YBProgressHUD.showTipMessage(inWindow: "当前版本号v\(String(describing: bst_appVersion))")
         case 4:
             UserDefaults.standard.set(nil, forKey: BSTLoginSuccess)
             YBProgressHUD.showActivityMessage(inWindow: "正在退出")
