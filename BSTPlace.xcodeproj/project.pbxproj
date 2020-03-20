@@ -106,7 +106,7 @@
 		5B4964C0241B3AC80044FA7C /* BSTSubscribeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BSTSubscribeCell.xib; sourceTree = "<group>"; };
 		5B4964C5241B63A10044FA7C /* BSTSquareSureController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSTSquareSureController.swift; sourceTree = "<group>"; };
 		5B4964C6241B63A10044FA7C /* BSTSquareSureController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BSTSquareSureController.xib; sourceTree = "<group>"; };
-		5B6DB8542418836F005DBE88 /* BSTPlace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BSTPlace.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B6DB8542418836F005DBE88 /* 有球必应.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "有球必应.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B6DB8572418836F005DBE88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B6DB8592418836F005DBE88 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		5B6DB85B2418836F005DBE88 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -220,7 +220,7 @@
 		5B6DB8552418836F005DBE88 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5B6DB8542418836F005DBE88 /* BSTPlace.app */,
+				5B6DB8542418836F005DBE88 /* 有球必应.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -372,7 +372,7 @@
 			);
 			name = BSTPlace;
 			productName = BSTPlace;
-			productReference = 5B6DB8542418836F005DBE88 /* BSTPlace.app */;
+			productReference = 5B6DB8542418836F005DBE88 /* 有球必应.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -689,7 +689,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cubee.coolBasketball.BSTPlace;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "有球必应";
 				SWIFT_OBJC_BRIDGING_HEADER = "BSTPlace/BSTVern/BSTPlace-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -712,7 +712,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cubee.coolBasketball.BSTPlace;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "有球必应";
 				SWIFT_OBJC_BRIDGING_HEADER = "BSTPlace/BSTVern/BSTPlace-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
